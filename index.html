@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Spectral:ital@0;1&display=swap');
+
+      :root{
+        font-family: 'Spectral', serif;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: grid;
+        place-content: center;
+      }
+      figure {
+        max-width: 75ch;
+      }
+      #quote {
+        font-size: 2rem;
+        font-style: italic;
+        line-height: 2;
+      }
+      #author {
+        text-align: right;
+        font-size: 1.25rem;
+      }
+      #author::before {
+        content: '~ ';
+      }
+    </style>
+  </head>
+  <body>
+    <figure>
+      <blockquote>
+        <p id="quote"></p>
+      </blockquote>
+      <figcaption id="author"></figcaption>
+    </figure>
+    <script src="script.js"></script>
+  </body>
+</html>
