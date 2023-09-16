@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital@0;1&display=swap');
+
+:root {
+    font-family: 'Spectral', serif;
+    color: hsla(240 100% 20%);
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+    place-content: center;
+    background-color: hsla(240 20% 95%);
+}
+figure {
+    opacity: 0;
+    max-width: 70ch;
+    transition: opacity 1s ease-out;
+}
+figure.active {
+    opacity: 1;
+}
+blockquote {
+    margin: 0;
+}
+#quote {
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1.8;
+}
+#author {
+    text-align: right;
+    font-size: 1.5rem;
+}
+#author::before {
+    content: '~ ';
+}
+#new-quote {
+    border: none;
+    padding: 0.75rem 2rem;
+    width: fit-content;
+    margin: 40px auto;
+    font-size: 1.125rem;
+    font-family: 'Spectral', serif;
+    cursor: pointer;
+    background-color: hsla(240 20% 90%);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+#new-quote:hover {
+    background-color: hsla(240 100% 90%);
+}

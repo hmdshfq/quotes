@@ -4,47 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quotes</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Spectral:ital@0;1&display=swap');
-
-      :root{
-        font-family: 'Spectral', serif;
-      }
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        display: grid;
-        place-content: center;
-      }
-      figure {
-        opacity: 0;
-        max-width: 70ch;
-        transition: opacity 1s ease-out;
-      }
-      figure.active {
-        opacity: 1;
-      }
-      blockquote{
-        margin: 0;
-      }
-      #quote {
-        font-size: 2rem;
-        font-style: italic;
-        line-height: 1.8;
-      }
-      #author {
-        text-align: right;
-        font-size: 1.25rem;
-      }
-      #author::before {
-        content: '~ ';
-      }
-    </style>
+    <title>Inspire Me!</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <figure>
@@ -53,6 +14,7 @@
       </blockquote>
       <figcaption id="author">Hammad Shafiq</figcaption>
     </figure>
+    <button id="new-quote">Next Inspiration</button>
     <script src="script.js"></script>
   </body>
 </html>

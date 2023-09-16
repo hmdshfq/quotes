@@ -1,7 +1,14 @@
+var nextElement = document.querySelector('#new-quote');
+var figureElement = document.querySelector('figure');
+
 fetchData();
 
+nextElement.addEventListener('click', ()=>{
+    figureElement.classList.remove('active');
+    fetchData();
+});
+
 async function fetchData() {
-    var figureElement = document.querySelector('figure');
     var quoteElement = document.querySelector('#quote');
     var authorElement = document.querySelector('#author');
     var randomNumber = Math.floor(Math.random() * 100 + 1);
